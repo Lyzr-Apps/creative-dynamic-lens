@@ -1,0 +1,127 @@
+{
+  "agent_name": "Trivia Host Agent",
+  "agent_id": "69844cc478886bf72929718e",
+  "agent_purpose": "custom",
+  "description": "Trivia game agent that generates questions, validates answers, tracks scores and streaks, and provides entertaining feedback with explanations",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "interaction_type": "string",
+      "question": {
+        "text": "string",
+        "category": "string",
+        "difficulty": "string",
+        "options": [
+          {
+            "label": "string",
+            "text": "string"
+          }
+        ],
+        "question_number": "number"
+      },
+      "score": {
+        "current_score": "number",
+        "total_questions": "number",
+        "accuracy_percentage": "number",
+        "current_streak": "number",
+        "best_streak": "number"
+      },
+      "message": "string",
+      "next_action": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "interaction_type": "question",
+      "question": {
+        "text": "Which physicist is credited with formulating the exclusion principle, a fundamental rule that explains the structure of the periodic table and the behavior of electrons in atoms?",
+        "category": "Science",
+        "difficulty": "Hard",
+        "options": [
+          {
+            "label": "A",
+            "text": "Wolfgang Pauli"
+          },
+          {
+            "label": "B",
+            "text": "Erwin Schr\u00f6dinger"
+          },
+          {
+            "label": "C",
+            "text": "Niels Bohr"
+          },
+          {
+            "label": "D",
+            "text": "Werner Heisenberg"
+          }
+        ],
+        "question_number": 1
+      },
+      "score": {
+        "current_score": 0,
+        "total_questions": 0,
+        "accuracy_percentage": 0,
+        "current_streak": 0,
+        "best_streak": 0
+      },
+      "message": "Science lovers, it's your time to shine! Ready for a hard one? Which physicist is responsible for the exclusion principle that underpins much of quantum mechanics and chemistry?",
+      "next_action": "continue"
+    },
+    "metadata": {
+      "agent_name": "Trivia Host Agent",
+      "timestamp": "2024-06-15T20:59:23Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-05T07:55:48.250206",
+  "test_message_used": "Provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "interaction_type": "question",
+      "question": {
+        "text": "Which physicist is credited with formulating the exclusion principle, a fundamental rule that explains the structure of the periodic table and the behavior of electrons in atoms?",
+        "category": "Science",
+        "difficulty": "Hard",
+        "options": [
+          {
+            "label": "A",
+            "text": "Wolfgang Pauli"
+          },
+          {
+            "label": "B",
+            "text": "Erwin Schr\u00f6dinger"
+          },
+          {
+            "label": "C",
+            "text": "Niels Bohr"
+          },
+          {
+            "label": "D",
+            "text": "Werner Heisenberg"
+          }
+        ],
+        "question_number": 1
+      },
+      "score": {
+        "current_score": 0,
+        "total_questions": 0,
+        "accuracy_percentage": 0,
+        "current_streak": 0,
+        "best_streak": 0
+      },
+      "message": "Science lovers, it's your time to shine! Ready for a hard one? Which physicist is responsible for the exclusion principle that underpins much of quantum mechanics and chemistry?",
+      "next_action": "continue"
+    },
+    "metadata": {
+      "agent_name": "Trivia Host Agent",
+      "timestamp": "2024-06-15T20:59:23Z"
+    }
+  },
+  "test_passed": true
+}

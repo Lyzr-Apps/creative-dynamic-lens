@@ -1,0 +1,53 @@
+{
+  "workflow_name": "Trivia Master Application",
+  "workflow_type": "single_agent",
+  "created_at": "2026-02-05T00:00:00Z",
+  "agents": [
+    {
+      "agent_id": "69844cc478886bf72929718e",
+      "name": "Trivia Host Agent",
+      "type": "Single",
+      "status": "active",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 1,
+      "description": "Acts as an engaging trivia host - generates questions based on selected category and difficulty, validates user answers, provides explanations for correct/incorrect responses, tracks score and streaks, and delivers entertaining feedback",
+      "response_schema_file": "response_schemas/trivia_host_agent_response.json"
+    }
+  ],
+  "workflow": {
+    "nodes": [
+      {
+        "id": "user_input",
+        "type": "Input",
+        "label": "User Query",
+        "nodeCategory": "input"
+      },
+      {
+        "id": "trivia_host",
+        "type": "Agent",
+        "label": "Trivia Host Agent",
+        "nodeCategory": "agent",
+        "agent_id": "69844cc478886bf72929718e"
+      },
+      {
+        "id": "response_output",
+        "type": "Output",
+        "label": "Trivia Response",
+        "nodeCategory": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "user_input",
+        "target": "trivia_host"
+      },
+      {
+        "source": "trivia_host",
+        "target": "response_output"
+      }
+    ]
+  },
+  "status": "complete"
+}

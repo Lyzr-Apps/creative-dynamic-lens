@@ -1,0 +1,53 @@
+{
+  "agent_name": "Trivia Host Agent",
+  "agent_id": "69844cc478886bf72929718e",
+  "test_message": "Give me another Science question at Hard difficulty",
+  "expected_purpose": "assistant",
+  "timestamp": "2026-02-05T07:55:48.249393",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "interaction_type": "question",
+      "question": {
+        "text": "Which physicist is credited with formulating the exclusion principle, a fundamental rule that explains the structure of the periodic table and the behavior of electrons in atoms?",
+        "category": "Science",
+        "difficulty": "Hard",
+        "options": [
+          {
+            "label": "A",
+            "text": "Wolfgang Pauli"
+          },
+          {
+            "label": "B",
+            "text": "Erwin Schr\u00f6dinger"
+          },
+          {
+            "label": "C",
+            "text": "Niels Bohr"
+          },
+          {
+            "label": "D",
+            "text": "Werner Heisenberg"
+          }
+        ],
+        "question_number": 1
+      },
+      "score": {
+        "current_score": 0,
+        "total_questions": 0,
+        "accuracy_percentage": 0,
+        "current_streak": 0,
+        "best_streak": 0
+      },
+      "message": "Science lovers, it's your time to shine! Ready for a hard one? Which physicist is responsible for the exclusion principle that underpins much of quantum mechanics and chemistry?",
+      "next_action": "continue"
+    },
+    "metadata": {
+      "agent_name": "Trivia Host Agent",
+      "timestamp": "2024-06-15T20:59:23Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"interaction_type\": \"question\",\n    \"question\": {\n      \"text\": \"Which physicist is credited with formulating the exclusion principle, a fundamental rule that explains the structure of the periodic table and the behavior of electrons in atoms?\",\n      \"category\": \"Science\",\n      \"difficulty\": \"Hard\",\n      \"options\": [\n        {\"label\": \"A\", \"text\": \"Wolfgang Pauli\"},\n        {\"label\": \"B\", \"text\": \"Erwin Schr\u00f6dinger\"},\n        {\"label\": \"C\", \"text\": \"Niels Bohr\"},\n        {\"label\": \"D\", \"text\": \"Werner Heisenberg\"}\n      ],\n      \"question_number\": 1\n    },\n    \"score\": {\n      \"current_score\": 0,\n      \"total_questions\": 0,\n      \"accuracy_percentage\": 0,\n      \"current_streak\": 0,\n      \"best_streak\": 0\n    },\n    \"message\": \"Science lovers, it's your time to shine! Ready for a hard one? Which physicist is responsible for the exclusion principle that underpins much of quantum mechanics and chemistry?\",\n    \"next_action\": \"continue\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Trivia Host Agent\",\n    \"timestamp\": \"2024-06-15T20:59:23Z\"\n  }\n}"
+}
